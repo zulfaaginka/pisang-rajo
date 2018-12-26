@@ -9,17 +9,18 @@
 
 <div class="row">
 @foreach ($menus as $menu)
-    <div class="col-md-4 wow fadeInDown">
-        <div class="clients-comments text-center">
-            <a href="/menu/{{$menu->id_menu}}"><img src= "{{asset('storage/menu_img/'. $menu->gambar_menu)}}" class="card-img-top" alt="narrower" width="100" height="300"></a>
+    <div class="col-md-4 wow fadeInDown" >
+        <div class="clients-comments text-center" style="background-color : #e0e0e0 ">
+            <a href="/menu/{{$menu->id_menu}}"><img src= "{{asset('storage/menu_img/'. $menu->gambar_menu)}}" class="card-img-top" alt="narrower" height="400"></a>
             <div class="card-body card-body-cascade">
-                <a href="/menu/{{$menu->id_menu}}" class="pink-text"><i class="fa fa-cutlery"></i> {{$menu->nama_menu}}</a>
+                <a href="/menu/{{$menu->id_menu}}" class="red-text"><i class="fa fa-cutlery"></i> {{$menu->nama_menu}}</a>
                 <!--Title-->
                 <h4 class="card-title">{{$menu->harga()}}</h4>
                 <!--Text-->
             </div>
         </div>
-    </div>  
+    </div>
+    <br>  
 @endforeach
 </div>
 

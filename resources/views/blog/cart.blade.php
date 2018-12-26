@@ -3,7 +3,12 @@
 @section('title','Cart - Rajo')
 
 @section('content')
-    <div class="container">
+<br>
+<br>
+<br>
+<br>
+
+    <div class="container" style="background-color : white">
         <p><a href="{{ url('shop') }}">Home</a> / Cart</p>
         <h1>Your Cart</h1>
 

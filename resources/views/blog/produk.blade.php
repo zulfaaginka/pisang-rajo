@@ -5,7 +5,8 @@
 @section('content')
 <br>
 <br>
-<div class="container">
+<div class="container" style="background-color : white">
+    <p><a href="{{url('/')}}">Home</a> / <a href="{{url('menu')}}">Menu</a> / {{$menu->nama_menu}}</p>
     <h1>{{ $menu->nama_menu }}</h1>
     
       <hr>

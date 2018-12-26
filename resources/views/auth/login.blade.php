@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LfTR3cUAAAAABbKOlIiMwZKTm51vFMAtbCRQ575"></div>  
+                        <div class="g-recaptcha col-md-4" data-sitekey="6LfTR3cUAAAAABbKOlIiMwZKTm51vFMAtbCRQ575"></div>  
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">

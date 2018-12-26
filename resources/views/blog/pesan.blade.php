@@ -178,7 +178,7 @@ fieldset {
 @section('content')
 <section class="page-section clearfix">
     <br>
-    <div class="container">
+    <div class="container" >
         <form id="contact" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <?php if(!empty($notify)){ ?>
                 <p class="notify <?php echo !empty($notifyClass)?$notifyClass:''; ?>"><?php echo $notify; ?></p>

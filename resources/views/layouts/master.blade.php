@@ -15,7 +15,7 @@
   <title>@yield('title')</title>
 </head>
 
-<body background="pisangrajo/bg-rajo.jpg" background-attachment="fixed">
+<body background="/pisangrajo/bg-rajo.jpg" background-attachment="fixed">
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark red scrolling-navbar">
       <a class="navbar-brand" href="/"><strong>Pisang Nugget Rajo</strong></a>
@@ -54,12 +54,34 @@
       </div>
   </nav>
   
-  <br><br>
+  <br>
+  <br>
+  <br>
+  @if (Session::has('success'))
+	
+	<div class="alert alert-success" role="alert">
+		<strong>Success:</strong> {{ Session::get('success') }}
+	</div>
+
+@endif
+
+@if (count($errors) > 0)
+
+	<div class="alert alert-danger" role="alert">
+		<strong>Errors:</strong>
+		<ul>
+		@foreach ($errors->all() as $error)
+			<li>{{ $error }}</li>
+		@endforeach  
+		</ul>
+	</div>
+
+@endif
     @yield ('content') 
   
   <br><br>
 
-  <footer class="page-footer font-small bottom yellow accent-2">
+  <footer class="page-footer font-small fixed-bottom yellow accent-2">
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:

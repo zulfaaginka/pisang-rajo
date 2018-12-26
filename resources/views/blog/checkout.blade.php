@@ -152,7 +152,8 @@
 
         </div> <!-- end checkout-section -->
     </div> --}}
-
+<br>
+<br>
 @endsection
 
 @section('extra-js')
